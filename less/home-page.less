@@ -80,11 +80,25 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 15px 15px;
+      margin-top: 0;
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+      }
+
       h3 {
         margin-bottom: 10px;
+
+        @media @phone {
+          margin-top: 15px;
+        }
       }
 
       p {
@@ -99,6 +113,11 @@
         text-align: center;
         border: 1px solid #22283A;
 
+        @media @phone {
+          width: 100%;
+          padding: 5%;
+        }
+
         &:hover {
           .button-style(#22283A, white, 3px);
         }
@@ -108,6 +127,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;
