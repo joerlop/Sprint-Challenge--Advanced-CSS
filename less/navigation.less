@@ -1,1 +1,31 @@
 // Navigation code here
+
+.navigation-top {
+    .flex-layout(column, space-evenly, center);
+    height: 100px;
+    background: #F6F6F6; 
+    opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    nav {
+        width: 100%;
+        .flex-layout(row, center, center);
+
+        a {
+            margin: 0 1%;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: black;
+
+            @media @phone {
+                margin: 0 2.5%;
+            }
+        }
+    }
+}
