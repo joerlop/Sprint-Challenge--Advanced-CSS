@@ -167,7 +167,10 @@ p {
   align-items: center;
   height: 100px;
   background: #F6F6F6;
+  opacity: 0.8;
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 .navigation-top h1 {
   font-size: 4rem;
@@ -199,6 +202,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  margin-top: 100px;
 }
 .home .intro img {
   width: 100%;
