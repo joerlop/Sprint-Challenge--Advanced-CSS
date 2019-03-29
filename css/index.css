@@ -199,6 +199,39 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 5px;
+  -webkit-animation: scale-up-center 1s;
+  -moz-animation: scale-up-center 1s;
+  animation: scale-up-center 1s;
+}
+@-moz-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 .home .intro h2 {
   padding: 15px;
